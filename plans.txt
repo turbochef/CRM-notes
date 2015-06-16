@@ -44,6 +44,8 @@ RFQ
 	-End_user
 		:name
 		:tags
+		:city
+		:state
 
 	=Revision
 		:notes
