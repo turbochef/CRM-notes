@@ -1,1 +1,60 @@
-Customers
+:field
+-belongs_to
+=has_many
+
+
+RFQ
+	:due
+	:ship_date
+	:is_budgetary
+	:notes
+	:end_user
+	:application_tags
+	:response_time
+	:active
+	:mandatory_due_date
+	:responded
+	-Customer
+		:name
+		:email
+		:city
+		:state
+		:phone
+		:fax
+		-Company
+			:name
+			:email
+			:city
+			:state
+			:phone
+			:fax
+	-Rep
+		:name
+		:email
+		:phone
+		:state
+		:representing
+		-Company
+	-Vendor
+		:name
+		:email
+		:phone
+		:fax
+		:state
+	-End_user
+		:name
+		:tags
+
+	=Revision
+		:notes
+		=Attachments
+			:notes
+		=Valves
+			:notes
+			:parameters
+			=Line_items
+				:notes
+	-Employee
+	=Application_tags
+
+
